@@ -10,7 +10,7 @@ var exercise=require("../models/exercise");
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-     callbackURL: "https://my-yogi-lite.herokuapp.com/",//testing
+     callbackURL: "https://my-yogi-lite.herokuapp.com/google/callback",//testing
     // callbackURL: "https://avinashjindal2510.herokuapp.com/google/callback",
     passReqToCallback: true
   },
