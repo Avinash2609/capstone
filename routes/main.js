@@ -55,7 +55,7 @@ router.get("/premium/payment",function(req,res){
     params['ORDER_ID']="Merchant"+Math.random().toString(36).substring(2,15),
     params['CUST_ID']=String(req.user.username)+Math.random().toString(36).substring(2,15),
     params['TXN_AMOUNT']='1',
-    params['CALLBACK_URL']='http://localhost:3001/premium/status/',//testing
+    params['CALLBACK_URL']='https://my-yogi-lite.herokuapp.com/premium/status/',//testing
     // params['CALLBACK_URL']='https://avinashjindal2510.herokuapp.com/campgrounds/' + req.params.id +'/status/' + params['ORDER_ID'],
     params['EMAIL']='ajindal_be18@thapar.edu',
     params['MOBILE_NO']='9050995986'
